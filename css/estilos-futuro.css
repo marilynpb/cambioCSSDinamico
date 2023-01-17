@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+
+/*
+Paleta de colores:
+    #000000 Negro - Buttons
+    #3523a3 Azul oscuro - Background Gradiente Form
+    #6901a0 Púrúra oscuro - Background Gradiente Form
+    #92018e Púrpura claro - Background Gradiente Form
+    #F02EAA Fucsia - Box shadow Form y buttons
+    #FFFFFF Blanco - Color Texto
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.labelInput{
+    color: rgb(243, 248, 248);
+}
+
+.labelInput:hover{
+    text-decoration: 2px underline #ffffff68;
+}
+
+body{
+    font-size: 3vh;
+    padding-bottom: 5%;
+    font-family: Poppins, sans-serif;
+    background-image: url(../img/6106991.jpg);
+    background-size: 100% 100%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+header{
+    width: 45%;
+    height: 80vh;
+    background-color: #000000;
+    background-image: url(../img/trib3-girona.jpg);
+    background-size: 150% 100%;
+    margin-bottom: 5%;
+    margin-top: 15vh;
+    margin-left: 7vh;
+    border-radius: 20px;
+    float: left;
+    position: fixed;
+    animation-name: fondo;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+    animation-duration: 10s;
+    transition: all 1s;
+    box-shadow: rgb(251, 252, 252) 0px 10px 20px -10px;
+}
+
+@keyframes fondo {
+    0%{background-image: url(../img/1_16a0838bee4.1983805_604871518_16a0838bee4_large.jpg)};
+    25%{background-image: url(../img/2635204.jpg)};
+    50%{background-image: url(../img/trib3-girona.jpg)};
+    75%{background-image: url(../img/PRAMA.webp)};
+    100%{background-image: url(../img/trib3-girona.jpg)}
+}
+
+header h1{
+    display: none;
+}
+
+main{
+    float: right;
+    width: 52%;
+    padding-bottom: 5%;
+    padding-top: 4.5vh;
+    margin-top: 12vh;
+    text-align: center;
+}
+
+form{
+    width: 90%;
+    height: auto;
+    max-height: 92vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16%;
+    color:#FFFFFF;  
+    padding-bottom: 5vh;
+}
+
+fieldset{
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #92018e;
+    background-image: linear-gradient(43deg, #92018e 0%, #6901a0 46%, #3523a3 100%);  
+    box-shadow: #f02ea9a9 5px 5px, #f02ea94b 10px 10px, #f02ea918 15px 15px, #f02ea90f 20px 20px, #f02ea905 25px 25px;
+    border-radius: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: start;
+    border: none;
+}
+
+fieldset:hover{
+    box-shadow: rgb(251, 252, 252) 0px 20px 30px -10px;
+}
+
+legend{
+    font-size: 3.5vh;
+    background-color: transparent;
+    margin-bottom: 3vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    color:#FFFFFF;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: rgb(86, 86, 89) 0px 0px 0px 2px inset, rgb(27, 26, 26) 10px -10px 0px -3px, rgb(152, 27, 193) 10px -10px;
+}
+
+label, input, select, p{
+    font-size: 2.5vh;
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+
+select{
+    width: 100%;
+    height: 7vh;
+    margin-bottom: 2vh;
+    background-color: #FFFFFF;
+    color:#000000;
+    border: none;
+    font-size: 2.5vh;
+    padding: 2vh;
+}
+
+input, textarea{
+    width: 100%;
+    height: 7vh;
+    margin-bottom: 2vh;
+    background-color: #FFFFFF;
+    color:#000000;
+    border-radius: 20px;
+    border: none;
+    font-size: 2.5vh;
+    padding: 2vh;
+}
+
+textarea{
+    max-width: 100vh;
+    font-size: 3vh;
+    border-radius: 0%;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    margin: 2vh;
+    width:2.5vh;
+    height:2.5vh;
+    margin-bottom: 5vh;
+    font-size: 2.5vh;
+}
+
+button{
+    width: auto;
+    height: 10vh;
+    line-height: 5vh;
+    border-radius: 50px;
+    margin: 3%;
+    margin-top: -5vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    font-size: 2.5vh;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+button:hover{
+    background-color: #000000;
+    transform: translateY(-10px);
+    box-shadow: rgba(211, 46, 240, 0.4) 0px 5px, rgba(191, 46, 240, 0.3) 0px 10px, rgba(191, 46, 240, 0.2) 0px 15px, rgba(169, 46, 240, 0.1) 0px 20px, rgba(175, 46, 240, 0.05) 0px 25px;
+}
+
+main form:last-of-type{
+    width: 80%;
+    background-color: #000000;
+    border-radius: 20px;
+    padding-top: 3vh;
+    background-color: #92018e;
+    background-image: linear-gradient(43deg, #92018e 0%, #6901a0 46%, #3523a3 100%);  
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+main form:last-of-type:hover{
+    box-shadow: rgb(251, 252, 252) 0px 20px 30px -10px;
+}
+
+#divBtns2{
+    width: 100%;
+    min-width: 100%;
+    height: 15vh;
+    border: none;
+    line-height: 20vh;
+    padding-left: 8vh;
+    margin-top: -5vh;
+    padding-top: 0%;
+    display: flex;
+    position: fixed;
+    text-align: end;
+    background-color: #000000ca;
+}
+
+#recordar{
+    width: auto;
+    height: 100%;
+    padding: 2vh;
+}
+
+#divBtns2 #aleatorio{
+    background-image: url('../img/random/9517557_dice_gambling_game_luck_play_icon.png');
+    background-size:70% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 70px;
+}
+
+#mySelect{
+    background-color: transparent;
+    border: 1px solid #000000ca;
+    margin-top: 6vh;
+    color: #FFFFFF;
+}
+
+#aleatorio, #alternar, #recordar, #onoff{
+    width: auto;
+    height: 100%;
+    margin-top: 6vh;
+    box-shadow: none;
+    border: none;
+    border-radius: 0px;
+    margin-left: 2vh;
+    margin-right:2vh;
+    background-color: transparent;
+    border: 1px solid #000000ca;
+}
+
+#aleatorio:hover, #alternar:hover, #recordar:hover, #onoff:hover, #mySelect:hover{
+    box-shadow: none;
+    transform: none;
+    border-radius: 0%;
+    border-bottom: 2px solid #ffffff68;
+    background-color: #000000;
+}
+
+
+
+/*----------MediaQuerys----------*/
+
+@media(max-width: 1630px){
+    #aleatorio, #alternar, #recordar, #onoff{
+        margin-left: 0;
+        margin-right: 0%;
+    }
+    #divBtns2{
+        padding-left: 2vh;
+    }
+}
+
+@media(max-width: 1475px){
+    #divBtns2{
+        padding-left: 0;
+    }
+}
+
+@media(max-width: 1331px){
+    #aleatorio, #alternar, #recordar, #onoff,#mySelect{
+        font-size: 2vh;
+    }
+    .labelInput{
+        font-size: 2vh;
+    }
+    #mySelect{
+        background-size: 30% 40%;
+    }
+}
+
+@media(max-width: 1234px){
+    header{
+        width: 44%;
+    }
+    form{
+        width: 100%;
+    }
+    main form:last-of-type{
+        width: 90%;
+    }
+    main form:first-of-type{
+        margin-bottom: 25vh;
+    }
+    #mySelect{
+        margin-left: 0%;
+    }
+}
+
+
+@media(max-width: 994px){
+    .cambiarDiseño, .recordar, .random{
+        padding: 0.5vh;
+    }
+    header{
+        position: relative;
+        clear: both;
+        margin-top: 3vh;
+        padding-left: 0;
+        width: 90%;
+    }
+    #divBtns2{
+        width: 100%;
+        padding-left: 2vh;
+        position: relative;
+        clear: both;
+        margin-bottom: 0%;
+    }
+    main{
+        width: 100%;
+        clear: both;
+    }
+}
+
+@media(max-width: 900px){
+    header{
+        margin-left: 2vh;
+    }
+}
+
+@media(max-width: 730px){
+    main form:first-of-type{
+        margin-bottom: 20vh;
+    }
+}
+
+@media(max-width: 523px){
+    button{
+        width: auto;
+        height: auto;
+        margin-bottom: 5vh;
+    }
+}

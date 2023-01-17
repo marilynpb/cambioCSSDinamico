@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+/*
+Paleta de Colores:
+    #202122 Gris oscuro - Botones y background Fieldset
+    #605E5E Gris un poco claro - Background Formulario, backgroun titulo
+    #9aa29f Gris claro - Background Legend
+    #d0d8d5 Gris muy claro - Background inputs, color texto del Form
+    #FAD102 Amarillo - Color Titulo, border Form, border Legend, border hover Buttons
+    #EC6804 Naranja - Background Separador
+*/
+
+
+@font-face {
+    font-family: presstart;
+    src: url('../font/press_start/prstartk.ttf');
+}
+
+.labelInput{
+    color: rgb(162, 168, 168);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+}
+
+body{
+    font-size: 2vh;
+    background-image: url(../img/2635205.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+header{
+    width: 50%;
+    height: auto;
+    margin-top: 3%;
+    color: #FAD102;
+    font-size: 2.7vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 10px;
+    margin-bottom: 5%;
+    background-color: #605E5E;
+}
+
+header h1{
+    width: auto;
+    font-family: presstart;
+    line-height: 10vh;
+    -webkit-text-stroke:0.5px #EC6804;
+}
+
+main{
+    width: 70%;
+    min-width: 48vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5vh;
+    color: #202122;
+    text-align: center;
+    font-weight: bold;
+    background-color: #605E5E;
+    margin-bottom: 5%;
+    border: 7px double #FAD102;
+}
+
+form{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 4vh;
+    margin-bottom: 5%;
+}
+
+main div{
+    width: 1%;
+    height: auto;
+    border-top: 14px dashed #EC6804;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    animation-name: barra;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes barra {
+    0%{width: 3%};
+    25%{width: 5%;};
+    50%{width: 10%};
+    75%{width: 15%};
+    100%{width: 20%} 
+}
+
+fieldset{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    text-align: center;
+    color: #d0d8d5;
+    text-align: center;
+    padding-bottom: 3%;
+    background-color: #202122;
+}
+
+legend{
+    width:auto;
+    background-color: #9aa29f;
+    color: #202122; 
+    padding: 1vh;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+    font-weight: bold;
+    border: 2px double #FAD102;
+}
+
+label{
+    text-align: center;
+}
+
+input[type="text"],input[type="email"], textarea{
+    width: 80%;
+    height: 5vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 2px solid #FAD102;
+    border-radius: 2px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    font-size: 3vh;
+    text-align: center;
+    background-color: #d0d8d5;
+}
+
+select{
+    text-align: center;
+    width: 80%;
+    height: 3vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    font-size: 3vh;
+    background-color: #d0d8d5;
+}
+
+textarea{
+    max-width: 80%;
+    height: 12vh;
+}
+
+input[type="radio"]{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+input[type="checkbox"]{
+    margin: 3%
+}
+
+button{
+    background-color: #202122;
+    width: auto;
+    padding: 2vh;
+    color: #d0d8d5;
+    border: 0.1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 6%;
+    margin-top: 4%;
+    margin-right: 4%;
+    font-size: 2.8vh;
+}
+
+button:hover{
+    border: 1px solid #FAD102;
+}
+
+#divBtns2{
+    width: 100%;
+    height: 10vh;
+    border: none;
+    margin: 0%;
+    display: flex;
+    margin-left: 5vh;
+    text-align: end;
+    padding-right: 10vh;
+    margin-top: 3vh;
+}
+
+#divBtns2 #aleatorio{
+    background-image: url('../img/random/9517557_dice_gambling_game_luck_play_icon.png');
+    background-size:60% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 70px;
+}
+
+#mySelect{
+    margin-top:-0.5vh;
+    margin-left: 0;
+    border-radius: 0;
+    background-color: #202122;
+    color: #d0d8d5;
+}
+
+#aleatorio, #alternar, #recordar, #onoff{
+    width: auto;
+    height: 100%;
+    margin-top: -0.5vh;
+}
+
+
+/*----------MediaQuerys----------*/
+
+@media(max-width: 800px) {
+    main{
+        width: 90%;
+    }
+}
+
+@media(max-width: 617px) {
+    #divBtns2{
+        width: 100%;
+        margin-left: 5%;
+    }
+    header{
+        width: 90%;
+    }
+}

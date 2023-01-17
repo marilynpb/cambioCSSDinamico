@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link id="estilos" rel="stylesheet" href="./css/estilos.css"> <!-- link con id para poder modificar el href -->
+
+    <title>Afiliación</title>
+</head>
+<body>
+    
+    <div id="divBtns2"></div>
+    
+    <header>
+        <h1>Vení al Gym!💪🏼</h1>
+    </header>
+    <main>
+        <form>  
+            <fieldset class="fieldset1">
+                <legend>🙋‍♂️ Datos Personales 👀</legend>        
+                <label for="nombre">Nombre:*</label>
+                <input type="text" autofocus id="nombre" required><p></p>
+                <label for="apellido">Apellido:*</label>
+                <input type="text" id="apellido" required><p></p>
+                <label for="documento">Documento:*</label>
+                <input type="text" id="documento" required><p></p>
+                <label for="nacionalidad">Nacionalidad:*</label>
+                <select id="nacionalidad" required>
+                    <option value="" selected disabled> - Seleccionar -</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="brasileña">Brasileña</option>
+                    <option value="uruguaya">Uruguaya</option>
+                    <option value="otra">Otra</option>
+                </select><p></p>  
+                <label for="contadosSobreVos">Contanos un poco de vos...</label> 
+                <textarea id ="contadosSobreVos" cols="20" rows="2"></textarea><p></p>
+                <label>Sexo:*</label><p></p>
+                <input type="radio" name="sexo" value="femenino" checked>Femenino
+                <input type="radio" name="sexo" value="masculino">Masculino
+                <input type="radio" name="sexo" value="otro">Otro
+            </fieldset>
+        </form>
+
+        <div></div>
+        <form>   
+            <fieldset class="fieldset2">
+                <legend>📱 Datos de Contacto 📧</legend>         
+                <label for="telefono">Teléfono:</label>
+                <input id="telefono" type="text" placeholder="Código de área y numero"><p></p>
+                <label for="email">Dirección de correo electrónico:*</label>
+                <input type="email" placeholder="Ej: mail@gmail.com" id="email" required>
+            </fieldset>
+        </form>
+        <div></div>
+        <form>   
+            <fieldset class="fieldset3">
+                <legend>🚴 Actividades 🤸‍♂️</legend>  
+                <p>Por favor, indicá cúales actividades te interesan.</p> <p></p>
+                <label>Sede Palermo:</label><p></p><p></p>
+                <input type="checkbox" value="basket">Básket
+                <input type="checkbox" value="boxeo">Boxeo
+                <input type="checkbox" value="futbol">Fútbol
+                <input type="checkbox" value="tenis">Tenís <p></p><p></p>
+                <label>Sede Rosario:</label> 
+                <p></p>
+                <p></p>
+                <input type="checkbox" value="basket">Básket
+                <input type="checkbox" value="futbol">Fútbol
+                <input type="checkbox" value="rugby">Rugby
+                <input type="checkbox" value="voley">Voley 
+        </fieldset>
+        </form>
+
+        <form>
+            <input type="checkbox" id="condiciones" class="textLeft" value="rugby" required>Acepto las condiciones*
+            <p></p>
+            <input type="checkbox" class="textLeft" value="voley" checked>Deseo recibir novedades 
+            <p class="textLeft">*: campo obligatorio.</p>
+        </form>
+        
+
+        <button type="submit" id="iniciarAfiliacion">Iniciar afiliación</button>
+        <button type="submit" id="restablecer">Restablecer</button>
+
+    </main>
+
+
+    <script src="./js/index.js"></script> 
+</body>
+</html>

@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+
+/*
+Paleta de Colores:
+    #0000 Negro - Color texto
+    #1F2023 Gris oscuro - Background Body
+    #415a51 Verde oscuro - Background Buttons y inputs activos
+    #4D6D63 Verde mas claro - Background Legend, border titulo
+    #A6C1B9 Verde claro - Background Form
+    #ffffff Blanco - Background inputs, color Titulo y texto Legend
+*/
+.labelInput{
+    color: #4D6D63;
+    font-size: 2.5vh;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#1F2023;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vh;
+}
+
+header{
+    width: 45%;
+    height: auto;
+    min-width: 48vh;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    border-top: 20px solid #4D6D63;
+    border-bottom: 20px solid #4D6D63;
+    font-size: 2.5vh;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    margin-left: auto;
+    margin-right: auto;
+    border-right: 20px solid transparent;
+    border-left:20px solid transparent;
+}
+
+main{
+    width: 45%;
+    min-width: 48vh;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: center;
+}
+
+form{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div{
+    width: 45%;
+    height: auto;
+    border-top: 14px dotted white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+
+fieldset{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #A6C1B9;
+    border-radius:5px;
+    text-align: center;
+    color: black;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+fieldset:focus-within legend{
+    color: white;
+    background-color: #2b3d37;
+}
+
+legend{
+    width: auto;
+    background-color:#4D6D63 ;
+    color: white; 
+    border-radius: 5px;
+    padding: 1vh;
+    text-align: start;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+}
+
+label{
+    text-align: center;
+}
+
+input[type="text"],input[type="email"], textarea{
+    width: 80%;
+    height: 4vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    font-size: 2vh;
+    text-align: end;
+}
+
+select{
+    text-align: start;
+    width: 80%;
+    height: 3vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    font-size: 2vh;
+}
+
+input[type="text"]:focus ,input[type="email"]:focus, textarea:focus{
+    background-color:#415a51;
+    color: white;
+}
+
+input[type="text"]:focus legend{
+    background-color: #1c15a4;
+}
+
+input[type="checkbox"]{
+    margin-right: 1vh;
+    margin-left: 1vh;
+}
+
+textarea{
+    max-width: 80%;
+    height: 15vh;
+}
+
+input[type="radio"]{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+p{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.fieldset2 input[type="text"],input[type="email"]{
+    text-align: end;
+    padding-right: 1%;
+}
+
+.fieldset3{
+    text-align: start;
+    padding-left: 2%;
+}
+
+.fieldset3 legend{
+    margin-bottom: 5%;
+}
+
+button{
+    background-color: #2B3D37;
+    width: auto;
+    padding: 1vh;
+    color: white;
+    border-radius: 5px;
+    border: 0.1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 4%;
+    margin-top: 4%;
+    margin-right: 4%;
+}
+
+button:hover{
+    background-color: #A6C1B9;
+    color: black;
+}
+
+.textLeft{
+    text-align: start;
+}
+
+main form:last-of-type{
+    color: white;
+    text-align: start;
+    margin-top: 5%;
+}
+
+
+#divBtns2{
+    width: 100%;
+    height: 8vh;
+    border: none;
+    margin: 0%;
+    display: flex;
+    padding-left: 5vh;
+    margin-top: 2vh;
+    text-align: end;
+    padding-right: 5vh;
+}
+
+#aleatorio, #alternar, #recordar, #onoff{
+    width: auto;
+    height: 100%;
+    margin-top: -0.5vh;
+}
+
+#divBtns2 #aleatorio{
+    background-image: url('../img/random/9517557_dice_gambling_game_luck_play_icon.png');
+    background-size:60% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 70px;
+}
+
+#mySelect{
+    margin-top: 0;
+    text-align: center;
+    background-color: #2B3D37;
+    color: white;
+    margin-left: 0;
+}
+
+
+
+/*----------MediaQuerys----------*/
+
+@media(max-width: 722px){
+    header{
+        margin-top: 10vh;
+    }
+
+}
+
+@media(max-width: 600px){
+    #divBtns2{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5vh;
+    }
+
+}
